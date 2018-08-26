@@ -1,5 +1,5 @@
 /*
-    本题思路：很简单的来一个O(N2)的扫描计算就行了，但是这样会超时间复杂度，所以需要复习的是类似map一类的算法
+    本题思路：很简单的来一个O(N2)的扫描计算就行了，但是这样会超时间复杂度，所以需要复习的是类似map一类的算法？
 */
 #include <iostream>
 #include <vector>
@@ -28,6 +28,7 @@ public:
 	}
 	//高效解法
 	vector<int> twoSumHigh(vector<int>& nums, int target) {
+		//如果超过了时间复杂度怎么办？这里需要一个更低时间复杂度的方法
 		return null;
 	}
 };
