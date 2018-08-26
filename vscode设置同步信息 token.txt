@@ -1,3 +1,2 @@
-Token:fbd829176dea4756e6a14adb541afb1438503c0a
-
-Sync : 上传完成. GIST ID : f52ac2301ed74cbeb7b7eb596e5844a6 .请在其他计算机上复制并使用此ID以下载设置.
+﻿Token:3e7ff37ef2ff693f1c1b7576fdf8aede00cac3a8
+Sync : 上传完成. GIST ID : f685bd82951978bbdc3ba9da19f49184 .请在其他计算机上复制并使用此ID以下载设置.
