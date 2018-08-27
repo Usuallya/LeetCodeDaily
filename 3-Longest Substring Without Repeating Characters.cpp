@@ -3,36 +3,6 @@
 #include <vector>
 using namespace std;
 
-//不会STL很苦逼。。只能自己写一个哈希表
-struct HashNode{
-    int index;
-    HashNode *next;
-};
-class HashTable{
-private:
-    //C++中CONST的语法？
-  int count;
-  vector<HashNode> a;
-
-public:
-  HashTable(string s){
-      //对a进行赋值
-      a.assign()
-  }
-  HashTable(HashTable &hash){
-      count = hash.count;
-  }
-  bool add(char key, int value);
-  int get(char key);
-};
-
-bool HashTable::add(char key,int value){
-    return true;
-}
-
-int HashTable::get(char key){
-    return 0;
-}
 
 class Solution {
 public:
@@ -52,8 +22,10 @@ public:
                 0 1 3 4
                   2
                   5
+        这个思路应该走不下去，因为无法确认哪一个区间内存在这个串，所以相当于还是要一个个遍历，一个个试，那么时间复杂度也就
+        提升不了
         */
-       
+        //2、
     }
     int lengthOfLongestSubstring(string s1,string s2){
         //KMP算法来求解最长公共子串
