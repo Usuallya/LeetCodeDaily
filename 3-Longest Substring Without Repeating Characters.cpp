@@ -187,6 +187,7 @@ public:
                 begin++;
             }
         }
+        return maxLength;
     }
     int lengthOfLongestSubstring(string s1,string s2){
         //KMP算法来求解最长公共子串
