@@ -8,11 +8,14 @@ You may assume nums1 and nums2 cannot be both empty.
 #include <vector>
 #include <iostream>
 #include <stdlib.h>
-
+#include <algorithm>
 using namespace std;
+
 
 class Solution {
 public:
+
+
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
         //1、考虑拼接两个数组，然后进行快排，找到中位数
         //是否拼接的时候时间复杂度就已经超了？
@@ -29,16 +32,18 @@ public:
             nums.push_back(*ite2);
             ite2++;
         }
-        qsort(nums);
+        sort(nums.begin(), nums.end());
         int length = nums.size();
-
         if(length%2==0)
-           ans = (nums[length / 2 - 1] + nums[length / 2]) / 2;
+           ans = (nums[length / 2 - 1] + nums[length / 2]) / 2.0;
         else
             ans = nums[length / 2];
         return ans;
     }
+
 };
+
+
 
 int main(){
     vector<int> a, b;
@@ -50,4 +55,6 @@ int main(){
         b.push_back(operation);
     Solution s;
     cout << s.findMedianSortedArrays(a, b);
+    system("pause");
+    return 0;
 }
