@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hadoop/CLionProjects/C++/chanpter6/SavingsAccount.cpp
+SavingsAccount.h
+/home/hadoop/CLionProjects/C++/chanpter6/SavingsAccount.h
+iostream
+-
+cmath
+-
+
+/home/hadoop/CLionProjects/C++/chanpter6/SavingsAccount.h
+

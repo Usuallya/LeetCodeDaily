@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/hadoop/CLionProjects/C++/chapter5/Client.h
+
+/home/hadoop/CLionProjects/C++/chapter5/test.cpp
+iostream
+-
+Client.h
+/home/hadoop/CLionProjects/C++/chapter5/Client.h
+
