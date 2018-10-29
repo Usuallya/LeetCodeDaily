@@ -3,6 +3,7 @@
 //
 
 #include "Date.h"
+#include "AccountException.h"
 #include <iostream>
 using namespace std;
 
@@ -48,11 +49,15 @@ void Date::show() const {
     cout<<"当前日期是："<<year<<"-"<<month<<"-"<<day<<endl;
 }
 
-int Date::operator-(Date date) const {
-    int yGap = date.getYear()-year;
-    int mGap = date.getMonth()-month;
-    int dGap = date.getDay()-day;
+int Date::operator-(Date date) const{
+    int yGap = year-date.getYear();
+    int mGap = month-date.getMonth();
+    int dGap = day-date.getDay();
 
-
-
+    if(yGap>=0 && mGap>=0&&dGap>=0)
+        return yGap*365+mGap*30+dGap;
+    else
+        throw new AccountException("日期错误！");
 }
+
+Date::Date(int year, int month, int day) : year(year), month(month), day(day) {}

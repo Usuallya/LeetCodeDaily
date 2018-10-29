@@ -11,11 +11,9 @@ Account::Account(Date date, string id):date(date),id(id) {
 
 }
 
-
 void Account::error(string msg) const {
     cout<<"发生错误"<<msg<<endl;
 }
-
 string Account::getId() const {
     return id;
 }
@@ -23,13 +21,17 @@ string Account::getId() const {
 double Account::getBalance() const {
     return balance;
 }
-
-void Account::setDate(Date date){
+void Account::setDate(Date date) {
     this->date = date;
 }
 Date Account::getDate() const{
     return date;
 }
-double Account::getTotal() {
-    return total;
+
+void Account::setBalance(double value){
+    this->balance = value;
+}
+
+Account::~Account() {
+    cout<<"An Account is destroying!"<<endl;
 }

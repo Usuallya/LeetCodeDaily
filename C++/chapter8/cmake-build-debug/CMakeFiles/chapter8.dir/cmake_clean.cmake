@@ -1,12 +1,15 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/chapter8.dir/main.cpp.o"
-  "CMakeFiles/chapter8.dir/Account.cpp.o"
-  "CMakeFiles/chapter8.dir/CreditAccount.cpp.o"
-  "CMakeFiles/chapter8.dir/SavingAccount.cpp.o"
-  "CMakeFiles/chapter8.dir/Date.cpp.o"
-  "CMakeFiles/chapter8.dir/Accumulator.cpp.o"
+  "CMakeFiles/chapter8.dir/Account.cpp.obj"
+  "CMakeFiles/chapter8.dir/Accumulator.cpp.obj"
+  "CMakeFiles/chapter8.dir/CreditAccount.cpp.obj"
+  "CMakeFiles/chapter8.dir/Date.cpp.obj"
+  "CMakeFiles/chapter8.dir/main.cpp.obj"
+  "CMakeFiles/chapter8.dir/SavingsAccount.cpp.obj"
+  "CMakeFiles/chapter8.dir/AccountException.cpp.obj"
   "chapter8.pdb"
-  "chapter8"
+  "chapter8.exe"
+  "chapter8.exe.manifest"
+  "libchapter8.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

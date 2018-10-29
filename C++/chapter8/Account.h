@@ -13,22 +13,29 @@ using namespace std;
 class Account {
     string id;
     double balance;
-    double total;
     Date date;
-
 protected:
     Account(Date date,string id);
     virtual void record(Date date,double amount,string desc)=0;
     void error(string msg) const;
-
 public:
     string getId() const;
+
     double getBalance() const;
-    //引入纯虚函数
+
     void setDate(Date date);
-    Date getDate() const;
+
+    virtual void deposit(Date date,double amount,string desc)=0;
+
+    virtual void withdraw(Date date,double amount,string desc)=0;
+
+    void setBalance(double value);
+
     virtual void show() const =0;
-    double getTotal();
+
+    Date getDate() const;
+
+    virtual ~Account();
 };
 
 #endif //CHAPTER8_ACCOUNT_H

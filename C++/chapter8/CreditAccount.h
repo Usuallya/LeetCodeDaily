@@ -8,15 +8,17 @@
 
 #include "Account.h"
 #include "Accumulator.h"
+#include "Date.h"
 
 class CreditAccount : public Account{
-    Accumulator acc;
     double credit;
     double rate;
+    //这是信用卡额度
     double fee;
-    double getDebt() const;
 public:
-    CreditAccount(Date date,string id,double credit,double rate,double fee);
+    CreditAccount(const Date &date, const string &id, double credit, double rate, double fee);
+
+    virtual void record(Date date,double amount,string desc);
 
     double getCredit() const;
 
@@ -24,12 +26,14 @@ public:
 
     double getFee() const;
 
-    double getAvailableCredit() const;
-
     void deposit(Date date,double amount,string desc);
+
     void withdraw(Date date,double amount,string desc);
-    void settle(Date date);
+
+
     virtual void show() const;
+
+    virtual ~CreditAccount();
 
 };
 

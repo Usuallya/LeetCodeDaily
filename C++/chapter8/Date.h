@@ -5,6 +5,7 @@
 #ifndef CHAPTER8_DATE_H
 #define CHAPTER8_DATE_H
 
+class AccountException;
 
 class Date {
     int year;
@@ -12,6 +13,8 @@ class Date {
     int day;
     int totalDays;
 public:
+    Date(int year, int month, int day);
+
     int getYear() const;
 
     int getMonth() const;
@@ -26,5 +29,5 @@ public:
 
     int operator -(Date date) const;
 };
+#endif
 
-#endif //CHAPTER8_DATE_H

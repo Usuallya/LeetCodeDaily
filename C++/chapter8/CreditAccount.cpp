@@ -3,16 +3,17 @@
 //
 
 #include "CreditAccount.h"
+#include <iostream>
+#include "Date.h"
+using namespace std;
+CreditAccount::CreditAccount(const Date &date, const string &id, double credit, double rate, double fee) : Account(date,
+                                                                                                                   id),
+                                                                                                           credit(credit),
+                                                                                                           rate(rate),
+                                                                                                           fee(fee) {
 
-CreditAccount::CreditAccount(Date date, string id, double credit, double rate, double fee)
-: Account(date,id),credit(credit),rate(rate),fee(fee),acc(date,0){
-    //注意，这里初始化组合类对象时，相当于直接调用组合类构造函数，传过去相应参数即可。
 }
 
-
-double CreditAccount::getDebt() const {
-    return ;
-}
 
 double CreditAccount::getCredit() const {
     return credit;
@@ -26,25 +27,26 @@ double CreditAccount::getFee() const {
     return fee;
 }
 
-double CreditAccount::getAvailableCredit() const {
-    return 0;
-}
-
+//信用卡的存款不产生利息
 void CreditAccount::deposit(Date date, double amount, string desc) {
-
-    setDate(date);
-
+    setBalance(getBalance()+amount);
 }
-
+//信用卡消费产生利息
 void CreditAccount::withdraw(Date date, double amount, string desc) {
-
+    record(date,amount,desc);
 }
 
-void CreditAccount::settle(Date date) {
-
+void CreditAccount::record(Date date, double amount, string desc) {
+    int dGap = getDate()-date;
+    fee+=dGap * rate * fee+amount;
+    setDate(date);
 }
 
 
-void CreditAccount::show() const{
+void CreditAccount::show() const {
+    cout<<"CreditAccount"<<getId()<<endl;
+}
 
+CreditAccount::~CreditAccount() {
+    cout<<"CreditAccount is destroying!"<<endl;
 }

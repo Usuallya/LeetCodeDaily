@@ -8,19 +8,26 @@
 
 #include "Account.h"
 #include "Accumulator.h"
-
+#include "Date.h"
 class SavingsAccount : public Account{
-    Accumulator acc;
     double rate;
-
+    static int total;
 public:
-    SavingsAccount(Date date,int id,double rate):Account(date,id),rate(rate){
-    }
+
+    SavingsAccount(const Date &date, const string &id, double rate);
+
+    static int getTotal();
     double getRate() const;
-    void deposit(Date date,double amount,string desc);
-    void withdraw(Date date,double amount,string desc);
-    void settle(Date date);
+    virtual void deposit(Date date,double amount,string desc);
+    virtual void withdraw(Date date,double amount,string desc);
     virtual void show() const;
+    void forSaving();
+
+    virtual ~SavingsAccount();
+
+protected:
+    void record(Date date, double amount, string desc) override;
+
 };
 
 
