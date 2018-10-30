@@ -8,12 +8,14 @@
 
 #include "Account.h"
 #include <string>
-class AccountException {
+#include <stdexcept>
+
+class AccountException{
     string id;
     const Account *account;
     string errMsg;
 public:
-    AccountException(const string &errMsg,const string &id=0, const Account *account=0);
+    AccountException(const string &errMsg,const string &id, const Account *account);
 
     const string &getId() const;
 

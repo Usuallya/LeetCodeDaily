@@ -11,8 +11,10 @@ class Date {
     int year;
     int month;
     int day;
-    int totalDays;
 public:
+
+    void toString();
+
     Date(int year, int month, int day);
 
     int getYear() const;

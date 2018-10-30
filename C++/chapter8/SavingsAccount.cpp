@@ -33,7 +33,7 @@ void SavingsAccount::deposit(Date date, double amount, string desc) {
 
 void SavingsAccount::withdraw(Date date, double amount, string desc) {
     if(amount>getBalance())
-        throw new AccountException("Not Enough Money");
+        throw new AccountException("Not Enough Money",getId(),this);
     else
         record(date,-amount,desc);
 

@@ -57,7 +57,13 @@ int Date::operator-(Date date) const{
     if(yGap>=0 && mGap>=0&&dGap>=0)
         return yGap*365+mGap*30+dGap;
     else
-        throw new AccountException("日期错误！");
+        throw runtime_error("日期错误！");
 }
 
-Date::Date(int year, int month, int day) : year(year), month(month), day(day) {}
+Date::Date(int year, int month, int day) : year(year), month(month), day(day) {
+    toString();
+}
+
+void Date::toString() {
+    cout<<"当前日期是:"<<getYear()<<"-"<<getMonth()<<"-"<<getDay()<<endl;
+}
