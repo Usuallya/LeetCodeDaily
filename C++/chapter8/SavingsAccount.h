@@ -11,6 +11,7 @@
 #include "Date.h"
 class SavingsAccount : public Account{
     double rate;
+
     static int total;
 public:
 

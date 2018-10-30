@@ -7,7 +7,7 @@
 using namespace std;
 
 
-Account::Account(Date date, string id):date(date),id(id) {
+Account::Account(Date date, string id):date(date),id(id),balance(0){
 
 }
 

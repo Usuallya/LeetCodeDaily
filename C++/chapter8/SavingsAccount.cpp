@@ -44,7 +44,7 @@ void SavingsAccount::forSaving() {
 }
 
 void SavingsAccount::show() const {
-    cout<<"SavingAccount"<<getId()<<endl;
+    cout<<"SavingAccount"<<getId()<<"\t"<<"Balance:"<<getBalance()<<endl;
 }
 
 void SavingsAccount::record(Date date, double amount, string desc) {

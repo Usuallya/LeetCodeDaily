@@ -6,63 +6,57 @@
 
 #IncludeRegexTransform: 
 
-F:/Git/LeetCodeDaily/C++/chapter8/Account.cpp
-Account.h
-F:/Git/LeetCodeDaily/C++/chapter8/Account.h
-iostream
--
-
-F:/Git/LeetCodeDaily/C++/chapter8/Account.h
+C:/git/LeetCodeDaily/C++/chapter8/Account.h
 string
 -
 Date.h
-F:/Git/LeetCodeDaily/C++/chapter8/Date.h
+C:/git/LeetCodeDaily/C++/chapter8/Date.h
 
-F:/Git/LeetCodeDaily/C++/chapter8/AccountException.h
+C:/git/LeetCodeDaily/C++/chapter8/AccountException.h
 Account.h
-F:/Git/LeetCodeDaily/C++/chapter8/Account.h
+C:/git/LeetCodeDaily/C++/chapter8/Account.h
 string
 -
 
-F:/Git/LeetCodeDaily/C++/chapter8/Accumulator.h
+C:/git/LeetCodeDaily/C++/chapter8/Accumulator.h
 Date.h
-F:/Git/LeetCodeDaily/C++/chapter8/Date.h
+C:/git/LeetCodeDaily/C++/chapter8/Date.h
 
-F:/Git/LeetCodeDaily/C++/chapter8/CreditAccount.cpp
+C:/git/LeetCodeDaily/C++/chapter8/CreditAccount.cpp
 CreditAccount.h
-F:/Git/LeetCodeDaily/C++/chapter8/CreditAccount.h
+C:/git/LeetCodeDaily/C++/chapter8/CreditAccount.h
 iostream
 -
 Date.h
-F:/Git/LeetCodeDaily/C++/chapter8/Date.h
+C:/git/LeetCodeDaily/C++/chapter8/Date.h
 
-F:/Git/LeetCodeDaily/C++/chapter8/CreditAccount.h
+C:/git/LeetCodeDaily/C++/chapter8/CreditAccount.h
 Account.h
-F:/Git/LeetCodeDaily/C++/chapter8/Account.h
+C:/git/LeetCodeDaily/C++/chapter8/Account.h
 Accumulator.h
-F:/Git/LeetCodeDaily/C++/chapter8/Accumulator.h
+C:/git/LeetCodeDaily/C++/chapter8/Accumulator.h
 Date.h
-F:/Git/LeetCodeDaily/C++/chapter8/Date.h
+C:/git/LeetCodeDaily/C++/chapter8/Date.h
 
-F:/Git/LeetCodeDaily/C++/chapter8/Date.h
+C:/git/LeetCodeDaily/C++/chapter8/Date.h
 
-F:/Git/LeetCodeDaily/C++/chapter8/SavingsAccount.cpp
+C:/git/LeetCodeDaily/C++/chapter8/SavingsAccount.cpp
 SavingsAccount.h
-F:/Git/LeetCodeDaily/C++/chapter8/SavingsAccount.h
+C:/git/LeetCodeDaily/C++/chapter8/SavingsAccount.h
 AccountException.h
-F:/Git/LeetCodeDaily/C++/chapter8/AccountException.h
+C:/git/LeetCodeDaily/C++/chapter8/AccountException.h
 iostream
 -
 cmath
 -
 Date.h
-F:/Git/LeetCodeDaily/C++/chapter8/Date.h
+C:/git/LeetCodeDaily/C++/chapter8/Date.h
 
-F:/Git/LeetCodeDaily/C++/chapter8/SavingsAccount.h
+C:/git/LeetCodeDaily/C++/chapter8/SavingsAccount.h
 Account.h
-F:/Git/LeetCodeDaily/C++/chapter8/Account.h
+C:/git/LeetCodeDaily/C++/chapter8/Account.h
 Accumulator.h
-F:/Git/LeetCodeDaily/C++/chapter8/Accumulator.h
+C:/git/LeetCodeDaily/C++/chapter8/Accumulator.h
 Date.h
-F:/Git/LeetCodeDaily/C++/chapter8/Date.h
+C:/git/LeetCodeDaily/C++/chapter8/Date.h
 

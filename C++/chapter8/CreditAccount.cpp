@@ -44,7 +44,7 @@ void CreditAccount::record(Date date, double amount, string desc) {
 
 
 void CreditAccount::show() const {
-    cout<<"CreditAccount"<<getId()<<endl;
+    cout<<"CreditAccount"<<getId()<<"\t"<<"Fee:"<<getFee()<<endl;
 }
 
 CreditAccount::~CreditAccount() {
