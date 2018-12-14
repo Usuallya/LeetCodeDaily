@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/git/C++/PSINS/KFApp.cpp
+KFApp.h
+C:/git/C++/PSINS/KFApp.h
+
+C:/git/C++/PSINS/KFApp.h
+PSINS.h
+C:/git/C++/PSINS/PSINS.h
+
+C:/git/C++/PSINS/Main_SINSGPS.cpp
+kfapp.h
+C:/git/C++/PSINS/kfapp.h
+PSINS.h
+C:/git/C++/PSINS/PSINS.h
+
+C:/git/C++/PSINS/PSINS.cpp
+PSINS.h
+C:/git/C++/PSINS/PSINS.h
+
+C:/git/C++/PSINS/PSINS.h
+float.h
+-
+math.h
+-
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+stdarg.h
+-
+time.h
+-
+
+C:/git/C++/PSINS/kfapp.h
+PSINS.h
+C:/git/C++/PSINS/PSINS.h
+
