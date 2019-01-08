@@ -1,0 +1,16 @@
+Determining if the C compiler works failed with the following output:
+Change Dir: D:/Git/LeetCodeDaily/剑指offer/count1/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/LLVM/bin/mingw32-make.exe" "cmTC_6ba86/fast"
+C:/LLVM/bin/mingw32-make.exe -f CMakeFiles\cmTC_6ba86.dir\build.make CMakeFiles/cmTC_6ba86.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/Git/LeetCodeDaily/剑指offer/count1/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6ba86.dir/testCCompiler.c.obj
+C:\LLVM\bin\gcc.exe    -o CMakeFiles\cmTC_6ba86.dir\testCCompiler.c.obj   -c D:\Git\LeetCodeDaily\鍓戞寚offer\count1\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
+gcc.exe: error: D:\Git\LeetCodeDaily\鍓戞寚offer\count1\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c: No such file or directory
+gcc.exe: fatal error: no input files
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_6ba86.dir\build.make:65: CMakeFiles/cmTC_6ba86.dir/testCCompiler.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/Git/LeetCodeDaily/剑指offer/count1/cmake-build-debug/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:120: cmTC_6ba86/fast] Error 2
+
+
